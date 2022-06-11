@@ -174,33 +174,37 @@
         </div>
         <div class="footer">
             <!--Checkout buttom-->
-            <button>
+            <button class="Visible_btn">
                 <p>Selecione os 3 itens</p>
                 <p>para fechar o pedido</p>
             </button>
+            <button class="checkout hidden" onclick="checkout()">
+                <p>Fechar pedido</p>
+            </button>
         </div>
         <!--Menu options confirmation-->
-        <div class="order_confirmation">
-            <div> Confirme seu pedido </div>
-            <div class="confirmation_01">
-                <p> Frango Yin Yang</p>
-                <p> Value 01</p>
+        <div class="hidden1" class="conteiner" >
+            <div class="order_confirmation">
+                <div> Confirme seu pedido </div>
+                <div class="confirmation_01">
+                    <p> Frango Yin Yang</p>
+                    <p> Value 01</p>
+                </div>
+                <div class="confirmation_02">
+                    <p> Coquinha gelada</p>
+                    <p> Value 02</p>
+                </div>
+                <div class="confirmation_03">
+                    <p> Pudim</p>
+                    <p> Value 03</p>
+                </div>
+                <div class="total">
+                    <p> TOTAL</p>
+                    <p> Final value</p>
+                </div>
+                <button> Tudo certo, pode pedir!</button>
+                <div > Cancelar </div>    
             </div>
-            <div class="confirmation_02">
-                <p> Coquinha gelada</p>
-                <p> Value 02</p>
-            </div>
-            <div class="confirmation_03">
-                <p> Pudim</p>
-                <p> Value 03</p>
-            </div>
-            <div class="total">
-                <p> TOTAL</p>
-                <p> Final value</p>
-            </div>
-            <button> Tudo certo, pode pedir!</button>
-            <div> Cancelar </div>
-            
         </div>
     </div>
     <script src="script.js"></script>

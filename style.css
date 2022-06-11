@@ -241,12 +241,13 @@ button p {
     margin-top: -176.50px;
     left: 50%;
     top: 50%;
-    display: none;
+    display: flex;
     flex-direction: column;  
     justify-content: space-evenly;
     border-radius: 9px;
     padding-left: 10px;
     padding-right: 5px; 
+    
     
 }
 .order_confirmation div:first-child{
@@ -321,8 +322,14 @@ button p {
 .hidden {
     display: none;
 }
+.hidden1 {
+    display: none;
+}
 
 .border{
     border: 5px solid #32B72F;
 }
 
+.background {
+   background-color: #32B72F;
+}
