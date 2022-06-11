@@ -118,12 +118,7 @@ button p {
     padding-right: 14px;
     margin-right: 16px; 
 }
-.dishes:focus{
-    border: 5px solid #32B72F;
-}
-.dishes:active{
-    border: 5px solid #32B72F;
-}
+
 .dishes p {
     font-size: 15px;
     font: 'Roboto', sans-serif;
@@ -326,3 +321,8 @@ button p {
 .hidden {
     display: none;
 }
+
+.border{
+    border: 5px solid #32B72F;
+}
+
