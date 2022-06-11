@@ -9,6 +9,9 @@
 body {
     background-color:#E5E5E5;
     margin-bottom: 108px;
+    
+    
+    
 }
 
 img {
@@ -249,6 +252,7 @@ button p {
     padding-right: 5px; 
     
     
+    
 }
 .order_confirmation div:first-child{
     font-size: 22px;
@@ -274,6 +278,7 @@ button p {
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;  
+    font-weight: 700;
     
 }
 .confirmation_01 {
@@ -332,4 +337,7 @@ button p {
 
 .background {
    background-color: #32B72F;
+}
+.opacity {
+    opacity: 0.05;
 }
