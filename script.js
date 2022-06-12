@@ -35,7 +35,6 @@ function dishSelection(element){
   buttonLayoutandPrice()
 }
 
-
 function beverageSelection(element){
 
   beverage = element.innerHTML;
