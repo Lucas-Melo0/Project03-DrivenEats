@@ -6,7 +6,6 @@ let selectedDessert;
 let dishes;
 let beverage;
 let dessert;
-let cancelAction;
 let dishePrice;
 let beveragePrice;
 let dessertPrice;
@@ -70,7 +69,7 @@ function dessertSelection(element){
      
 }
 
-// Hidden/PopUp function
+// Hidden/PopUp functions
 
 function checkout(){
   
@@ -90,26 +89,26 @@ function checkout(){
 }
 }
 
-function buttonLayoutandPrice(){
-  if( dishes && beverage && dessert){
+function buttonLayoutandPrice(){  
+  if( dishes && beverage && dessert){   // Makes the order button toggle between clickable and not clickable
     let btn = document.querySelector(".checkout");
     let visibleBtn = document.querySelector(".Visible_btn")
     btn.classList.add("background")
     btn.classList.remove("hidden")
     visibleBtn.classList.add("hidden")
   }
-  if(curatedDish !== undefined && curatedBeverage !== undefined && curatedDessert !== undefined){
+  if(curatedDish !== undefined && curatedBeverage !== undefined && curatedDessert !== undefined){  // Bill calculator
     localPrice= curatedDish + curatedBeverage + curatedDessert;
     finalPrice = localPrice.toFixed(2);
   }
 }
-function cancel(){
+function cancel(){             // Hides the confirmation menu when the button "Cancel" is pressed. 
   let hidden = document.querySelector(".conteiner");
   let opacity = document.querySelector(".menu_page");
   opacity.classList.remove("opacity");
   hidden.classList.add("hidden1");
 }
-function order() {
+function order() {          // Prompts for name and adress for whatsapp messaging of order.
   let name = prompt("Qual seu nome?")
   let adress = prompt("Qual seu endereço?");
   let message = `Olá, gostaria de fazer o pedido:\n - Prato: Frango Yin Yang\n- Bebida: Coquinha Gelada\n- Sobremesa: Pudim\nTotal: ${finalPrice}\n

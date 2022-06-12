@@ -1,9 +1,6 @@
 /* Google fonts used */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
 
-/* Universal configuration */
-
-
 /* Tags configuration */
 
 body {
@@ -43,10 +40,7 @@ ion-icon{
     display: none;
 }
 
-/* Divs configs */
-
-/* Menu page */
-
+/* Classes configs */
 
 /* Header */
 
@@ -112,7 +106,7 @@ ion-icon{
 
 /* Dishes */
 
-.dishes {
+.dishes, .beverage, .desserts {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -156,22 +150,6 @@ ion-icon{
 
 /* Beverage */
 
-.beverage {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items:flex-start;
-    width: 172px;
-    height: 216px;
-    background-color: #FFFFFF;
-    border-radius: 5%; 
-    padding-left: 14px;
-    padding-right: 14px;
-    margin-right: 16px;
-    box-sizing: border-box;
-    
-    
-}
 .beverage p {
     font-size: 15px;
     font: 'Roboto', sans-serif;
@@ -200,22 +178,6 @@ ion-icon{
 
 /* Desserts */
 
-.desserts {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items:flex-start;
-    width: 172px;
-    height: 216px;
-    background-color: #FFFFFF;
-    border-radius: 5%;
-    padding-left: 14px;
-    padding-right: 14px;
-    margin-right: 16px;
-    box-sizing: border-box;
-    
-    
-}
 .desserts p {
     font-size: 15px;
     font: 'Roboto', sans-serif;
@@ -325,9 +287,7 @@ ion-icon{
 }
 
 /* Javascript interaction */
-.active{
-    border: 10px solid black;
-  }
+
 .hidden {
     display: none;
 }
