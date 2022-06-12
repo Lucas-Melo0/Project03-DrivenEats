@@ -121,10 +121,10 @@ ion-icon{
     height: 216px;
     background-color: #FFFFFF;
     border-radius: 5%;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25); 
     padding-left: 14px;
     padding-right: 14px;
     margin-right: 16px; 
+    box-sizing: border-box;
 }
 
 .dishes p {
@@ -164,11 +164,11 @@ ion-icon{
     width: 172px;
     height: 216px;
     background-color: #FFFFFF;
-    border-radius: 5%;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25); 
+    border-radius: 5%; 
     padding-left: 14px;
     padding-right: 14px;
     margin-right: 16px;
+    box-sizing: border-box;
     
     
 }
@@ -209,10 +209,10 @@ ion-icon{
     height: 216px;
     background-color: #FFFFFF;
     border-radius: 5%;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25); 
     padding-left: 14px;
     padding-right: 14px;
     margin-right: 16px;
+    box-sizing: border-box;
     
     
 }
@@ -240,7 +240,7 @@ ion-icon{
 }
 /* Checkout button */
 .Visible_btn {
-    cursor:default;
+    cursor:not-allowed;
 }
 
 /* Order confirmation */
@@ -324,8 +324,6 @@ ion-icon{
     cursor: pointer;
 }
 
-
-
 /* Javascript interaction */
 .active{
     border: 10px solid black;
@@ -347,7 +345,7 @@ ion-icon{
 }
 
 .border{
-    border: 5px solid #32B72F;
+    box-shadow: inset 0px 0px 0px 5px #32B72F;
 }
 
 .background {
@@ -356,6 +354,4 @@ ion-icon{
 .opacity {
     opacity: 0.05;
 }
-.checkmark {
-    
-}
+
