@@ -1,4 +1,3 @@
-
 // Global Variables
 
 let selectedDish;
@@ -15,8 +14,9 @@ let curatedDish;
 let curatedBeverage;
 let curatedDessert;
 let finalPrice;
-
-
+let checkmarkDish;
+let checkmarkBeverage;
+let checkmarkDessert;
 
 // Selection functions
 
@@ -24,23 +24,30 @@ function dishSelection(element){
   
    dishes = element.innerHTML; 
    selectedDish = document.querySelector(".dishes.border");
-    if (selectedDish !== null ){
-    selectedDish.classList.remove("border")
+   checkmarkDish = document.querySelector(".showingDish");
+    if (selectedDish !== null){
+    selectedDish.classList.remove("border");
+    checkmarkDish.classList.remove("showingDish");
     }
-  element.classList.add("border")
+  element.classList.add("border");
+  element.classList.add("showingDish");
   dishePrice = element.querySelector(".price").innerHTML;
   curatedDish = parseFloat(dishePrice.replace("R$","").replace(",","."));
   buttonLayoutandPrice()
 }
 
+
 function beverageSelection(element){
 
   beverage = element.innerHTML;
   selectedBeverage = document.querySelector(".beverage.border");
-    if (selectedBeverage !== null ){
-    selectedBeverage.classList.remove("border")
+  checkmarkBeverage = document.querySelector(".showingBeverage");
+    if (selectedBeverage !== null){
+    selectedBeverage.classList.remove("border");
+    checkmarkBeverage.classList.remove("showingBeverage");
     }
-  element.classList.add("border")
+  element.classList.add("border");
+  element.classList.add("showingBeverage");
   beveragePrice = element.querySelector(".price").innerHTML;
   curatedBeverage = parseFloat(beveragePrice.replace("R$","").replace(",","."));
   buttonLayoutandPrice()
@@ -50,10 +57,13 @@ function beverageSelection(element){
 function dessertSelection(element){
   dessert = element.innerHTML;
   selectedDessert = document.querySelector(".desserts.border");
-    if (selectedDessert !== null ){
-    selectedDessert.classList.remove("border")
+  checkmarkDessert = document.querySelector(".showingDessert");
+    if (selectedDessert !== null){
+    selectedDessert.classList.remove("border");
+    checkmarkDessert.classList.remove("showingDessert");
     }
-  element.classList.add("border") 
+  element.classList.add("border")
+  element.classList.add("showingDessert") 
   dessertPrice = element.querySelector(".price").innerHTML;
   curatedDessert = parseFloat(dessertPrice.replace("R$","").replace(",",".")); 
   buttonLayoutandPrice()
@@ -105,13 +115,10 @@ function order() {
   let message = `Olá, gostaria de fazer o pedido:\n - Prato: Frango Yin Yang\n- Bebida: Coquinha Gelada\n- Sobremesa: Pudim\nTotal: ${finalPrice}\n
   Nome: ${name} \nEndereço: ${adress}`;
   let encoded = encodeURIComponent(message);
-  if (window.confirm('ok para confimar, Cancelar para sair'))
+  if (window.confirm('Clique ok para continuar para o webwhasapp'))
    {
    window.open(`https://wa.me/5583996108686?text=${encoded}`);
    };
-  
-
-  
 }
 
 

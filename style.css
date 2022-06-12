@@ -9,8 +9,7 @@
 body {
     background-color:#E5E5E5;
     margin-bottom: 108px;
-    
-    
+    font-family:'Roboto', sans-serif; ;   
     
 }
 
@@ -30,12 +29,18 @@ button {
     width: 85%;
     border-radius: 50px;
     height: 61px;
+    cursor: pointer;
     
 }
 button p {
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+}
+ion-icon{
+    color: #32B72F;
+    margin-left: 125px;
+    display: none;
 }
 
 /* Divs configs */
@@ -127,7 +132,7 @@ button p {
     font: 'Roboto', sans-serif;
     color: #A6A6A6;
 }
-.dishes p:last-child {
+.dishes p:nth-child(5) {
     font-size: 16px;
     color: #000000;
     font-weight: 400;
@@ -172,7 +177,7 @@ button p {
     font: 'Roboto', sans-serif;
     color: #A6A6A6;
 }
-.beverage p:last-child {
+.beverage p:nth-child(4) {
     font-size: 16px;
     color: #000000;
     font-weight: 400;
@@ -216,7 +221,7 @@ button p {
     font: 'Roboto', sans-serif;
     color: #A6A6A6;
 }
-.desserts p:last-child {
+.desserts p:nth-child(4) {
     font-size: 16px;
     color: #000000;
     font-weight: 400;
@@ -233,6 +238,11 @@ button p {
     justify-content: center;
     align-items: center;
 }
+/* Checkout button */
+.Visible_btn {
+    cursor:default;
+}
+
 /* Order confirmation */
 
 .order_confirmation {
@@ -249,9 +259,7 @@ button p {
     justify-content: space-evenly;
     border-radius: 9px;
     padding-left: 10px;
-    padding-right: 5px; 
-    
-    
+    padding-right: 5px;    
     
 }
 .order_confirmation div:first-child{
@@ -278,8 +286,7 @@ button p {
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;  
-    font-weight: 700;
-    
+    font-weight: 700;    
 }
 .confirmation_01 {
     display:flex;
@@ -287,8 +294,7 @@ button p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 22px;
-    color: #FFFFFF;
-    
+    color: #FFFFFF;  
 }
 .confirmation_02 {
     display:flex;
@@ -296,8 +302,7 @@ button p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 22px;
-    color: #FFFFFF;
-    
+    color: #FFFFFF;   
 }
 .confirmation_03 {
     display:flex;
@@ -305,8 +310,7 @@ button p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 22px;
-    color: #FFFFFF;
-    
+    color: #FFFFFF;   
 }
 .total {
     display:flex;
@@ -315,7 +319,9 @@ button p {
     color: #FFFFFF;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
-    
+}
+.cancel {
+    cursor: pointer;
 }
 
 
@@ -330,6 +336,15 @@ button p {
 .hidden1 {
     display: none;
 }
+.showingDish ion-icon {
+    display: flex;
+}
+.showingBeverage ion-icon {
+    display: flex;
+}
+.showingDessert ion-icon {
+    display: flex;
+}
 
 .border{
     border: 5px solid #32B72F;
@@ -340,4 +355,7 @@ button p {
 }
 .opacity {
     opacity: 0.05;
+}
+.checkmark {
+    
 }
